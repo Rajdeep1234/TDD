@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'de.no3x'
+group 'de.com'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.11

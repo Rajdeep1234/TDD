@@ -1,4 +1,4 @@
-package de.no3x.tdd.money;
+package de.com.tdd.money;
 
 public class Money implements Expression {
     protected int amount;

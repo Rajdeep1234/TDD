@@ -1,4 +1,4 @@
-package de.no3x.tdd.money;
+package de.com.tdd.money;
 
 public interface Expression {
     Money reduce(Bank bank, String to);

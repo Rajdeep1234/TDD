@@ -1,4 +1,4 @@
-package de.no3x.tdd.money;
+package de.com.tdd.money;
 
 import org.junit.Test;
 
