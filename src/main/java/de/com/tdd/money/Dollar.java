@@ -9,6 +9,7 @@ public class Dollar {
         this.amount = amount;
     }
 
+
     // Returning a new object as we cann't use the same instance
     public Dollar times(int rate){
         return new Dollar(amount*rate);
