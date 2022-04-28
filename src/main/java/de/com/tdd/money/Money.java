@@ -1,6 +1,7 @@
 package de.com.tdd.money;
 
-public  class Money {
+
+public  class Money implements Expression {
     protected int amount;
     protected String currency;
 
@@ -31,5 +32,9 @@ public  class Money {
     // Returning a new object as we cann't use the same instance
     public Money times(int multiplier){
         return new Money(amount*multiplier,this.currency);
+    }
+
+    public Expression plus(Money five) {
+        return new Money(this.amount+five.amount,this.currency);
     }
 }
