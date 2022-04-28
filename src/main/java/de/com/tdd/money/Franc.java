@@ -7,10 +7,4 @@ public class Franc extends Money{
     }
 
 
-    // Returning a new object as we cann't use the same instance
-    public Money times(int multiplier){
-
-        return Money.franc(amount*multiplier);
-    }
-
 }
