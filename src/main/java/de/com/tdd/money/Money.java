@@ -14,11 +14,11 @@ public  class Money {
     }
 
     public static Money dollar(int amount){
-        return new Dollar(amount,"USD");
+        return new Money(amount,"USD");
     }
 
     public static Money franc(int amount){
-        return new Franc(amount,"CHF");
+        return new Money(amount,"CHF");
     }
     //As Dollar/franc is a value object we have to check whether its the same value and object or not
     @Override
