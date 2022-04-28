@@ -1,9 +1,18 @@
 package de.com.tdd.money;
 
-public class Money {
+public abstract class Money {
     protected int amount;
 
-    //As Dollar is a value object we have to check whether its the same value and object or not
+    public abstract Money times(int multiplier);
+
+    public static Money dollar(int amount){
+        return new Dollar(amount);
+    }
+
+    public static Money franc(int amount){
+        return new Franc(amount);
+    }
+    //As Dollar/franc is a value object we have to check whether its the same value and object or not
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

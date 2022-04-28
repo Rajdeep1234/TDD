@@ -10,8 +10,9 @@ public class Dollar extends Money {
 
 
     // Returning a new object as we cann't use the same instance
-    public Dollar times(int rate){
-        return new Dollar(amount*rate);
+    public Money times(int multiplier)
+    {
+        return new Dollar(amount*multiplier);
     }
 
 

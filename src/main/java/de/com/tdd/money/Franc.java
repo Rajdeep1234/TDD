@@ -8,8 +8,8 @@ public class Franc extends Money{
 
 
     // Returning a new object as we cann't use the same instance
-    public Franc times(int rate){
-        return new Franc(amount*rate);
+    public Money times(int multiplier){
+        return new Franc(amount*multiplier);
     }
 
 }
